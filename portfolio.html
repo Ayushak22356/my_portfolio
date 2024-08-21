@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(90deg, #1d4350, #a43931);
+            padding: 20px 0;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5em;
+            color: #fff !important;
+        }
+
+        .navbar-nav .nav-link {
+            color: #fff !important;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ffd700 !important;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h1, h2 {
+            font-weight: bold;
+            color: #1d4350;
+        }
+
+        #about, #contact {
+            background-color: #fff;
+            padding: 60px 0;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #projects {
+            background-color: #f8f9fa;
+            padding: 60px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card {
+            border: none;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .card-title {
+            font-size: 1.25em;
+            color: #1d4350;
+        }
+
+        .btn-primary {
+            background-color: #1d4350;
+            border: none;
+            transition: background-color 0.3s;
+        }
+
+        .btn-primary:hover {
+            background-color: #a43931;
+        }
+
+        footer {
+            background-color: #1d4350;
+            color: white;
+            padding: 20px 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .form-control {
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            transition: border-color 0.3s;
+        }
+
+        .form-control:focus {
+            border-color: #1d4350;
+            box-shadow: 0 0 5px rgba(29, 67, 80, 0.5);
+        }
+
+        button[type="submit"] {
+            background-color: #1d4350;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            color: white;
+            transition: background-color 0.3s;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #a43931;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="py-5">
+            <div class="container">
+                <h1>About Me</h1>
+                <p> 
+                    About Me
+                    I'm a passionate Computer Science Engineering student with a deep interest in software development, data structures, and emerging technologies like AI and cloud computing. With a strong foundation in programming languages such as Python, Java, and C++, I thrive on solving complex problems and building innovative solutions. My academic journey has been complemented by hands-on projects in web development, machine learning, and network security, where I've honed my skills in both individual and collaborative settings.
+                    
+                    Driven by curiosity and a commitment to continuous learning, I am eager to apply my technical expertise in real-world challenges. I am particularly interested in pursuing opportunities where I can contribute to impactful projects and grow as a developer..</p>
+            </div>
+        </section>
+
+        <section id="projects" class="py-5 bg-light">
+            <div class="container">
+                <h2>My Projects</h2>
+                <div class="row">
+                    
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="D:\kya hua bhai.doc\Javascript Intro\potfolio\cloud project.png" class="card-img-top" alt="Project 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Cloud Gaming Platform</h5>
+                                <p class="card-text">.Cloud gaming is a streaming service that provides high-quality content at the cost of internet bandwidth and server capacity.</p>
+                                <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#projectModal1">View Project</a>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="card">
+                                <img src="D:\kya hua bhai.doc\Javascript Intro\potfolio\to do.jpg" width="300px" class="card-img-top" alt="Project 2" >
+                                <div class="card-body">
+                                    <h5 class="card-title">To-Do list application</h5>
+                                    <p class="card-text">To-do list as a productivity planner app, is dedicated to helping users track things to do, make daily planners and provide important task reminders for free..</p>
+                                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#projectModal2">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                   
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-5">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="5" placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    
+    <!-- Modal for Project 1 -->
+<div class="modal fade" id="projectModal1" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel1" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="projectModalLabel1">Cloud Gaming Platform</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                A cloud gaming platform is a service that allows users to play video games via streaming directly from the cloud. Instead of requiring a powerful gaming console or high-end PC to run the games locally, cloud gaming leverages remote servers with powerful hardware to run the games, and streams the gameplay to the user's device. This enables users to play high-quality games on various devices, including smartphones, tablets, smart TVs, or less powerful computers.<br>
+                <br>
+                **Key Features of Cloud Gaming Platforms:**
+                <ul>
+                    <li>Accessibility</li>
+                    <li>Instant Play</li>
+                    <li>Cross-Platform Play</li>
+                    <li>Scalability</li>
+                </ul>
+                **Benefits:**
+                <ul>
+                    <li>Cost savings</li>
+                    <li>Convenience</li>
+                    <li>No hardware requirements</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Project 2 -->
+<div class="modal fade" id="projectModal2" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel2" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="projectModalLabel2">To-Do List Web App</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                A to-do list contains all the tasks that need to be done and can be ticked off accordingly. It is suitable for every person involved in a project, as it can be customized and provides more clarity.<br>
+                <br>
+                One of the most important reasons to use a to-do list is that it helps you stay organized. When you write all your tasks in a list, they seem more manageable. When you have a clear outline of the tasks you need to do and those you've completed, it helps you stay focused while freeing up space in your mind for other, more creative tasks.<br>
+                <br>
+                For building a web-based to-do list app, you can use HTML, CSS, and JavaScript for the frontend, and a backend framework like Node.js with Express.js for the server-side logic. Additionally, use a database (such as MongoDB) to store tasks persistently.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+   
+    <script>
+        document.querySelector('#contactForm').addEventListener('submit', function(event) {
+            const name = document.querySelector('#name').value;
+            const email = document.querySelector('#email').value;
+            const message = document.querySelector('#message').value;
+
+            if (name === '' || email === '' || message === '') {
+                alert('Please fill in all fields.');
+                event.preventDefault();
+            } else {
+                alert('Thank you for your message!');
+            }
+        });
+    </script>
+    
+</body>
+</html>
